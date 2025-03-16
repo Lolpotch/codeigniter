@@ -9,6 +9,7 @@ class UserController extends Controller
 {
     public function index()
     {
+        // A comment Just to trigger git push here
         $model = new UserModel();
         $data['users'] = $model->findAll();
         return view('users/index', $data);
